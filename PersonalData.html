@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data</title>
+    <link rel="stylesheet" href="PersonalData.css">
+</head>
+<body>
+    <main>
+        <h2><span class="first-part">sh</span>redders</h2>
+        <div class="sign-up">
+            <h1>Sign Up</h1>
+            <form method="post" action="signUp.php" id="signUpForm">
+                <!--The label refers to the Name-->
+                <div class="input-group">
+                    <label for="FirstName" class="label-first">First Name</label>
+                    <input type="text" name="FirstName" class="FirstName" placeholder="FirstName" >    
+                </div>
+                <div class="input-group">
+                    <label for="SecondName" id="label-second">Second Name</label>
+                    <input type="text" name="SecondName" id="SecondName" placeholder="SecondName">
+                </div>
+                <div class="input-group">
+                    <label for="Email"class="label-email">Email</label>
+                    <input type="text" name="Email" required class="Email" placeholder="Email" >    
+                </div>
+                <div class="input-group">
+                    <label for="Phone-Number" class="label-no">Phone Number</label>
+                    <input type="text" name="Phone-Number" id="PhoneNumber" placeholder="Phone-Number">    
+                </div>
+                <div class="input-group">
+                    <label for="password"class="label-password">password</label>
+                    <input type="password" name="password" required class="password" placeholder="password" >    
+                </div>
+                <div class="input-group">
+                    <input type="submit" disabled value="Register" id="Register" >
+                </div>
+            <!--Dont put the a href tag. Thats what makes the
+            rotate dysfunctional.-->
+            <p>Already Registered?<button id="register" onclick="signRotate()">Log-In</button></p>
+        </div>
+        <div class="log-in">
+            <h1>Log In</h1>
+            <form method="post" action="logIn.php" id="logInForm">
+                <div class="input-group">
+                    <label for="FirstName" class="label-first">First Name</label>
+                    <input type="text" name="FirstName" class="FirstName" placeholder="FirstName" >    
+                </div>
+                <div class="input-group">
+                    <label for="Email"class="label-email">Email</label>
+                    <input type="text" name="Email" required class="Email" placeholder="Email" >    
+                </div>
+                <div class="input-group">
+                    <label for="password"class="label-password">password</label>
+                    <input type="password" name="password" required class="password" placeholder="password" >    
+                </div>
+                <div class="input-group">
+                    <input type="submit" disabled value="Login" id="Login">
+                </div>
+            </form>
+            <p>Not registered?<button id="log">Register</button></p>
+        </div>
+    </main>
+    <script type="text/javaScript" src="PersonalData.js"></script>
+</body>
+</html>
